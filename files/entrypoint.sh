@@ -30,4 +30,4 @@ echo "Parameters: $@"
 
 sleep 5
 
-$COMANDO $@
+$COMANDO "$@"
