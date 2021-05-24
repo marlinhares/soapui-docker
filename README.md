@@ -14,6 +14,8 @@ In my case, I use it to run remotely on my jenkins conteiner:  functional tests 
 ## How to Use
 
 - go to the folder where your Soapui project is saved
+- you do not need to build this image, use this pre-built instead: 
+	- ``` docker pull linhares/soapui-docker:5.5.0-1.0.0 ```
 - run the appropriate docker command. See examples bellow
 
 ## Parameters
