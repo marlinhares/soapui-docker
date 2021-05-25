@@ -63,7 +63,7 @@ Just replace for your own names on the examples.
 	- Pay attention to the env parameters: COMMAND, XMX and LOG_LEVEL
 
 - **call specific load test saving the results to a dir with others parameters**
-	- ``` docker run --rm -it -e "TZ=America/Sao_Paulo" -e "LOG_LEVEL=ERROR" -e "XMX=4000m" -e "COMMAND=loadtestrunner.sh" -v "$PWD"/entrypoint.sh:/entrypoint.sh -v "$PWD":/project linhares/soapui-docker:5.5.0-1.0.0 -sSuiteTestes1 -cTestCase-EnvioRecebimento-MultiAnexos -PQtdArquivosProcesso=2 -m1 -n1 -r -f/project/result -l"LoadTest 1" /project/Barramento-API-V3-soapui-project.xml ```
+	- ``` docker run --rm -it -e "TZ=America/Sao_Paulo" -e "XMX=4000m" -e "COMMAND=loadtestrunner.sh" -v "$PWD":/project linhares/soapui-docker:5.5.0-1.0.0 -sSuiteTestes1 -cTestCase-EnvioRecebimento-MultiAnexos -PQtdArquivosProcesso=2 -m5 -n2 -r -f/project/result -l"LoadTest 1" /project/Barramento-API-V3-soapui-project.xml ```
 
 	- -m change how many iterations the load test will run
 	- -n how many threads will be created in parallel
