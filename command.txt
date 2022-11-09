@@ -1,0 +1,1 @@
+docker run -it --rm --name soapui-loadtestrunner --env "LOG_LEVEL=DEBUG" --env "COMMAND=loadtestrunner.sh" -v="Local_Project_Folder":/project -v="Local_Report_Folder":/reports soapui/testrunner-loadtestrunner -sloadTest -cTestCase -lLoadTest -r -f/reports /project/test-loadtestrunner.xml

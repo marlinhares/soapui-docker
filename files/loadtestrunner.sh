@@ -38,7 +38,7 @@ else
     fi
 fi
 
-SOAPUI_CLASSPATH=$SOAPUI_HOME/bin/soapui-5.5.0.jar:$SOAPUI_HOME/lib/*
+SOAPUI_CLASSPATH=$SOAPUI_HOME/bin/soapui-5.7.0.jar:$SOAPUI_HOME/lib/*
 JFXRTPATH=`$JAVA -cp $SOAPUI_CLASSPATH com.eviware.soapui.tools.JfxrtLocator`
 SOAPUI_CLASSPATH=$JFXRTPATH:$SOAPUI_CLASSPATH
 
